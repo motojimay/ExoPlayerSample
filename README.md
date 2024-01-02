@@ -1,11 +1,23 @@
 # ExoPlayerSample
 This repository is ExoPlayer Sample.
 
-* contain  
+## About
+This repository contains two functions: the Android application and the server.
   > app: VideoSampleApp(Android)  
-  > server: VideoSampleServer(Node.js)
+  > server: VideoSampleServer(Node.js)  
+  > ### To run server, Please input Unix command below.
+  > ```
+  > cd VideoSampleServer
+  > ```
+  > ```
+  > npm install
+  > ```
+  > ```
+  > npm start
+  > ```
 
-* This app use OSS Libraries below
+## License
+This app use OSS Libraries below
   > Retrofit2 (v2.9.0)  
   > 　com.squareup.retrofit2:retrofit:2.9.0  
   > 　com.squareup.retrofit2:converter-gson:2.9.0  
