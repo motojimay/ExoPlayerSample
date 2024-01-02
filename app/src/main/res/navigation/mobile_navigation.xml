@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_list">
+
+    <fragment
+        android:id="@+id/navigation_list"
+        android:name="com.example.videosample.ui.list.VideoPlayListFragment"
+        android:label="VideoList"
+        tools:layout="@layout/fragment_video_play_list" >
+
+        <action
+            android:id="@+id/action_video_list_view_to_video_play_view"
+            app:destination="@id/navigation_video_play"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_video_play"
+        android:name="com.example.videosample.ui.video.VideoPlayFragment"
+        android:label="VideoPlay"
+        tools:layout="@layout/fragment_video_play">
+
+        <!--suppress NavigationFile -->
+        <argument
+            android:name="videoData"
+            app:argType="com.example.videosample.data.model.VideoData" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_setting"
+        android:name="com.example.videosample.ui.setting.SettingFragment"
+        android:label="Setting"
+        tools:layout="@layout/fragment_setting"/>
+
+</navigation>
